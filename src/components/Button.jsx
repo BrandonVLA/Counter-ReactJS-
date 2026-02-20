@@ -4,7 +4,7 @@ function Button({
     onClick, 
     children, 
     variant = "default",
-    size = 'medium'
+    size = 'large'
 }) {
 
     const buttonClass = `${styles.button} ${styles[variant]} ${styles[size] || ''}`;

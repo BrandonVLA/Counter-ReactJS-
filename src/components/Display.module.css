@@ -4,7 +4,7 @@
   padding: 20px;
   margin: 10px 0;
   text-align: center;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .title {
@@ -26,4 +26,24 @@
 
 .negative {
   color: #dc3545;
+}
+
+.positiveDisplay {
+  background-color: #d4edda;
+  color: #fff;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.negativeDisplay {
+  background-color: #f8d7da;
+  color: #fff;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }

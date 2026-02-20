@@ -7,14 +7,14 @@ function Counter() {
   const { counter, minus5, minus1, reset, add1, add5 } = useCounter();
 
   return (
-    <div className="styles.container">
+    <div className={styles.container}>
       <Display value={counter} title="Custom Counter" />
       <div className={styles.buttonGroup}>
-        <Button onClick={minus5}>-5</Button>
-        <Button onClick={minus1}> -1 </Button>
-        <Button onClick={reset}>Reset(0)</Button>
-        <Button onClick={add1}> +1 </Button>
-        <Button onClick={add5}>+5</Button>
+        <Button onClick={minus5} variant="danger">-5</Button>
+        <Button onClick={minus1} variant="danger"> -1 </Button>
+        <Button onClick={reset} variant="reset">Reset(0)</Button>
+        <Button onClick={add1} variant="success"> +1 </Button>
+        <Button onClick={add5} variant="success">+5</Button>
       </div>
     </div>
   );

@@ -37,3 +37,13 @@
   padding: 15px 30px;
   font-size: 18px;
 }
+
+.success {
+  background-color: green;
+  color: #fff;
+}
+
+.danger {
+  background-color: red;
+  color: #fff;
+}
