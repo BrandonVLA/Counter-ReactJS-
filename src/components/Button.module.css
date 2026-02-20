@@ -1,0 +1,39 @@
+.button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  min-width: 60px;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button:active {
+  transform: translateY(0);
+}
+
+.default {
+  background-color: #007bff;
+  color: white;
+}
+
+.reset {
+  background-color: #dc3545;
+  color: white;
+}
+
+.small {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.large {
+  padding: 15px 30px;
+  font-size: 18px;
+}

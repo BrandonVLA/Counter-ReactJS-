@@ -1,7 +1,11 @@
-function Display({ value }) {
+import styles from './Display.module.css';
+
+function Display({ value, title = 'Current Value' }) {
+    const valueClass = value>= 0 ? styles.positive : styles.negative;
     return(
-        <div className="display">
-            <h2>Current Value: {value}</h2>
+        <div className={styles.container}>
+            <h2 className={styles.title}>{title}</h2>
+            <p className={`${styles.value} ${valueClass}`}>{value}</p>
         </div>
     )
 }

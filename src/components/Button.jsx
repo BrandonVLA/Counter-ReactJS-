@@ -1,8 +1,16 @@
-function Button({ onClick, children, variant = "default"}) {
+import styles from './Button.module.css';
 
+function Button({ 
+    onClick, 
+    children, 
+    variant = "default",
+    size = 'medium'
+}) {
+
+    const buttonClass = `${styles.button} ${styles[variant]} ${styles[size] || ''}`;
 
     return(
-        <button onClick={onClick} className={`button ${variant}`}>
+        <button onClick={onClick} className={buttonClass}>
             {children}
         </button>
     )
